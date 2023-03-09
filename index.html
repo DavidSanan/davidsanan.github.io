@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<style>
+			p { 
+			   text-align: justify; 
+			   }
+			div {text-align: justify;}
+		</style>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138570437-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-138570437-1');
+		</script>
+
+		<title>David Sanán Personal Website</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://www.w3counter.com/tracker.js?id=112206"></script>
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+					<h1 id="logo"><a href="#">David Sanán</a></h1>
+					<p>Assistant Professor @ Singapore Institute of Technology (SIT) </p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#about" class="active">About</a></li>
+						<li><a href="#news">News</a></li>
+						<li><a href="#research">Research</a></li>
+						<li><a href="#publications">Recent Publications</a></li>
+						<li><a href="#experience">Research Experience</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+				<footer>
+					Email: david.miguel AT singaporetech.edu.sg
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div class="main">
+
+						<!-- about -->
+							<section id="about">
+								<div class="container">
+									<header class="major">
+										<h2>About Me</h2>
+									</header>
+									<p>Assistant Professor at Singapore Institute of Technology (SIT), <br>
+									<a href="https://sit-cybersecurity.netlify.app">SIT Cibery-Security Research Group</a>, <br>
+									<a href="http://sits3.net">SIT System Section (S3)</a>, <br>
+									<a href="https://www.singaporetech.edu.sg/undergraduate-programmes/infocomm-technology">Infocomm Technology</a>, <br>
+									<a href="https://www.singaporetech.edu.sg">Singapore Institute of Technology</a>
+									</p>
+
+									<p> My area of research goes from theoretical research related to formal methods to its application to different domains. In the more theoretical aspects, 
+										I work on concurrency, refinement, and inference systems, and programming language semantics, among others. </p>
+								    <p> The non-theoretical side covers an heterogenous domain of applications in which I highlight micro-kernel security, 
+										quantum computing, smart-contracts, and hardware verification. I am also interested on the application of formal methods to 5G infrastructures, 
+										EV, IoT, Unmanned Vehicles and Mavlink protocol verification </p>
+								    <p> I have recently being awarded with a Singapore MoE-Tier 1 project: <i> MOSES: A Meta Executable Operational Semantics for Efficient Smart Contract Verification</i> <br>
+									    In this project I aim to construct a meta-sematincs for smart-contract programming languages. This will be the base for an intermediate language to which translate smart-contracts developed in different languages, having a common verification framework based on that language</p>
+									<p> <b>I am hiring a postdoc to work with me on this project, if you are interested please send me an email.</b> </p>
+								</div>
+							</section>
+						<!-- News -->
+							<section id="news">
+								<div class="container">
+									<h3>News</h3>
+									PC Member of PRDC 2023 <br>
+									PC Member of ICFEM 2023<br>
+									PC Member of ICFEM 2022<br>
+									Publication Accepted in <b> POPL'22 </b>. <em>"Quantum Separation Logic: A Framework for Local Reasoning o Quantum Programs."</em>
+									PC Member of ICFEM 2021<br>
+									Publication Accepted in <b>ACM Transactions on Programming Languages and Systems (TOPLAS)</b>. <em>"CSim2 : Compositional Top-down Verification of Concurrent Systems Using Rely-Guarantee"</em>. <i> David Sanan, Yongwang Zhao, Shang-Wei Lin, Yang Liu</i> "<br>
+									Publication Accepted in <b>IEEE Transactions on Vehicular Technology</b>. <em>"CANeleon: Protecting CAN Bus with Frame ID Chameleon"</em>. <i> Kun Cheng, Yuebin Bai, Yuan Zhou, Yun Tang, David Sanan and Yang Liu </i> "<br>
+									PC Member of ICFEM 2020<br>
+									Publication Accepted in <b>S&P'20</b>. <em>"Semantic Understanding of Smart Contracts: Executable Operational Semantics of Solidity</em>. <i>Jiao Jiao, Shuanglong Kan, Shang-Wei Lin, David Sanan, Yang Liu and Jun Sun</i> "<br>
+                                                                         Publication Accepted in <b>CAV19</b>. <em>"Rely-guarantee Reasoning about Concurrent Memory Management in Zephyr RTOS</em>. <i>Yongwang Zhao and David Sanan</i> "<br>
+                                                                         PC Member of ATVAART19 <br>
+                                                                         PC Member of ICFEM 2019 Doctoral Symposium <br>
+									 PC Member of Tacas18 Artifact Evaluation (TACASART'18)<br>
+								</div>
+							</section>
+						<!-- Research -->
+							<section id="research">
+								<div class="container">
+									<h3>Research</h3>
+									<p> I am currently finishing a verification framework in Isabelle/HOL for quantum computing programs using separation logic. It is based on our work published in POPL'22, 
+										improving it and fixing a number of errors that I detected during the formalization. Once this is done, I plan to continue working on this line by adding incorrectness logic</p>
+									<p> I am also working on a very promising framework for the verification of sequential systems. The verification is highly automated among other things thanks to what we call phi-types. 
+										Phi-types introduce refinement in the verification assertions, allowing to reason over high level specifications, while the verification is done over low level specifications. 
+										This together with separation logic bring refinement to a new level enhancing its automation, becoming more powerful than just abstract refinement.</p>
+								    <p> I keep working on compositional verification of concurrent systems, and its application to cyber-physical systems. 
+										I started this line when I was in NTU and thanks to it we were awarded with several NRF grants</p>
+								    
+									<p> Other research lines in which I worked in the past and that I still keep researching in is Micro-Kernel verification, from the source code to the machine code, using formal proofs.
+									   This involves the creation of frameworks and tools for the compositional verification of the micro-kernel from an abstract specification based on the ARINC-653 standard for
+									   partitioning micro-kernels. I verified some parts of a concurrent micro-kernel specification and its refinement with the implementation. 
+									   The complexity of the verification of the micro-kernel makes necessary to have a team of several people working on the different verification tasks, in which I played a team coordinator role. </p>
+
+									<p> In relation to the micro-kernel verification, I worked also on the semantics of the SPARC v8+ ISA and weak memory models.  </p>
+
+									<p> I have also collaborated on the formal verification of the Leon3 processor, a SPARC V8+ multi-core CPU and
+									   in the formalization of executable semantics for the RUST language for safe code generation, and in the research of compositional techniques for verification scalability. </p>
+									<p> Overall I am interested on anything related to formal methods and logic, and applying to real-world domains. I am open to collaborate on this topics </p>
+								</div>
+							</section>
+						<!-- Publications -->
+							<section id="publications">
+								<div class="container">
+									<h3>Recent Publications</h3>
+									<ol>
+										<li><i>Ke Jiang, Tianwei Zhang, David Sanan,Yongwang Zhao, and Yang Liu</i><b>A Formal Methodology for Verifying Side-Channel Vulnerabilities in Cache Architectures. </b> International Conference on Formal Engineering Methods (ICFEM'22)</li>
+										<li><i>Xuan-Bach Le, Shang-Wei Lin, Sun Jun, David Sanan</i><b> Quantum Separation Logic: A Framework for Local Reasoning o Quantum Programs.</b> ACM SIGPLAN Symposium on Principle Of Programming Languages (POPL'22). January 2022. Pennsylvania</li>
+										<li><i>David Sanan, Yongwang Zhao, Shang-Wei Lin, Yang Liu</i><b> CSim2 : Compositional Top-down Verification of Concurrent Systems Using Rely-Guarantee.</b> ACM Transactions on Programming Languages and Systems (TOPLAS)</li>
+										<li><i>Xuan-Bach Le, David Sanan, Sun Jun, Shang-Wei Lin</i><b> Automatic Verification of Multi-threaded Programs by Inference of Rely-Guarantee Specifications.</b> International Conference on Engineering of Complex Computer Systems (ICECCS) </li>
+										<li><i> Zhé Hóu, David Sanan, Alwen Tiu, Yang Liu, Koh Chuen Hoa & Jin Song Dong</i> <b> An Isabelle/HOL Formalisation of the SPARC Instruction Set Architecture and the TSO Memory Model. </b> Journal of Automated Reasoning </li>
+									    <li><i>Kun Cheng, Yuebin Bai, Yuan Zhou, Yun Tang, David Sanan and Yang Liu.</i> <b>CANeleon: Protecting CAN Bus with Frame ID Chameleon.</b> IEEE Transactions on Vehicular Technology</li>
+										<li><i>Jiao Jiao, Shuanglong Kan, Shang-Wei Lin, David Sanan, Yang Liu and Jun Sun.</i> <b>Semantic Understanding of Smart Contracts: Executable Operational Semantics of Solidity.</b> The 41st IEEE Symposium on Security and Privacy. May 2020. San Francisco  US</li>
+                                        <li><i>Wilayat Khan, David Sanan, Hou Zhe and Liu Yang.</i> <b>On Embedding a Hardware Description Language in Isabelle/HOL.</b> Journal of  Design Automation for Embedded Systems (DAEM). </li>
+										<li><i>Ke Jiang, David Sanan, Yongwang Zhao, Shuanglong Kan and Yang Liu.</i> <b>OA Formally Verified Buddy Memory Allocation Model.</b> The 24th International Conference on Engineering of Complex Computer Systems. November 2019. Guangzhou China. </li>
+   										<li><i>Yongwang Zhao, David Sanan, Fuyuan Zhang and Yang Liu.</i> <b>A Parametric Rely-guarantee Reasoning Framework for Concurrent Reactive Systems.</b> The 3rd World Congress on Formal Methods (FM'19). October 2019, Porto Portugal</li>
+                                        <li><i>Yongwang Zhao and David Sanan.</i> <b>Rely-guarantee Reasoning about Concurrent Memory Management in Zephyr RTOS.</b> The 31st International Conference on Computer-Aided Verification. July 2019, New York US</li>
+										<li><i>Fuyuan Zhang, Yongwang Zhao, David Sanan, Yang Liu, Alwen Tiu, Shang-Wei Lin and Jun Sun.</i> <b>Compositional Reasoning for Shared-variable Concurrent Programs</b> The 22nd International Symposium on Formal Methods. July 2018, Oxford UK</li>
+									    <li><i>Shang-Wei Lin, Jun Sun, Hao Xiao, Liu Yang, David Sanan, Henri Hansen. </i> <b>FiB: Squeezing Loop Invariants by Interpolation between Forward and Backward Reachability.</b> The 32nd IEEE/ACM International Conference on Automated Software Engineering. October 30 – November 3, 2017. Urbana-Champaign, Illinois, USA</li>
+										<li><i>Hou Zhe, David Sanan, Alwen Tiu, Yang Liu. </i><b>Proof Tactics for Assertions in Separation Logic. </b>8th International Conference on Interactive Theorem Proving (ITP). 26-29 September 2017. Brasilia, Brazil.</li>
+										<li><i>Yongwang Zhao, David Sanan, Fuyuan Zhang and Yang Liu.</i><b> Refinement-based Specification and Security Analysis of Separation Kernels. </b>IEEE Transactions on Dependable and Secure Computing. doi:10.1109/TDSC.2017.2672983</li>
+										<li><i>David Sanan, Yongwang Zhao, Zhe Hou, Fuyuan Zhan, Alwen Tiu, Liu Yang.</i><b> CSimpl: a Framework for the Verification of Concurrent Programs using Rely-Guarantee.</b> 23rd International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS). 24-29 April 2017. Uppssala Sweden. </li>
+										<li><i>Zhe Hou, David Sanan, Alwen Tiu, Liu Yang, Koh Chuen Hoa.</i><b> An Executable Formalization of the SPARCv8 Instruction Set Architecture: A Case Study for the Leon3 Processor.</b> 21st Internation Symposium on Formal Methods. LNICS 9995:388 – 405. November 9-11, 2016. Limassol Cyprus.</li>
+										<li><i>Yongwang Zhao, David Sanan, Fuyuan Zhang, Yang Liu.</i><b> Reasoning About Information Flow Security of Separation Kernels with Channel-Based Communication.</b> 22nd International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS). 14-21 October 2016 Eindhoven, The Netherlands</li>
+										<li><i>David Sanan, Yang Liu, Yongwang Zhao, Zhenchang Xing, Mike Hinchey.</i><b>  Verifying FreeRTOS' Cyclic Doubly LInked List Implementation: From Abstract Specification to Machine Code.</b> 20th International Conference on Engineering of Complex Computer Systems. ICECCS 2015. 9-12 December 2015. Gold Coast, Australia.</li>
+										<li><i>Yongwang Zhao, David Sanan, Fuyuan Zhang, Yang Liu.</i><b> Formal Specification and Analysis of Partitioning Operating Systems by Integrating Ontology and Refinement.</b> IEEE Transactions on Industrial Informatics 12(4):1321-1331</li>
+									</ul>
+								</div>
+							</section>
+							<!-- Experience -->
+								<section id="experience">
+									<div class="container">
+										<h3>Research Experience</h3>
+											<ol>
+											<li> PhD student at University of Málaga. From Dec 2004 to Nov 2009. <i><a href="thesis_sanan.pdf">Techniques for the Automatic Analysis of Software Described in Programming Languages</a></i></li>
+											<li> Postdoc at University of Málaga. From Dec 2009 to May 2011. Extension of LTL with mu-calculus for the spatial and temporal verification of programs using complex data structures.</li>
+											<li> Postdoc at Singapore University of Technology and Design. From Jun 2011 to Jun 2012. Application of model checking techniques to the verification of sensor networks software. </li>
+											<li> Postdoc at Trinity College Dublin. From July 2012 to December 2013. Modelling and verification of a separation microkernel by means of theorem proving.</li>
+											<li> Postdoc at National University of Singapore. From January 2014 to January 2015. Machine code verification by means of theorem proving.</li>
+											</ol>
+									</div>
+								</section>
+						<!-- Contact -->
+							<section id="contact">
+								<div class="container">
+									<h3>Contact Me</h3>
+									<p>SIT-Nanyang Polytechnic<br>
+									   172A Ang Mo Kio Avenue 8, Singapore 567739
+                                    </p>
+									<p> Email: david.miguel AT singaporetech.edu.sg
+                                    
+								</div>
+							</section>
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+									David San&aacuten 2017
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
